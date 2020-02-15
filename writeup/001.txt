@@ -1,0 +1,4 @@
+看到==结尾，初步估计是base编码，尝试了base64，不对，尝试base32解密，正确:SdyFlag{fheuwiwojxjiejioew}
+
+tips:
+https://www.toolnb.com/tools/base32.html

@@ -1,0 +1,4 @@
+打开看是一个正常的图片，查看详细信息，并无任何发现，使用16进制编辑器打开，发现最后的flag：SdyFlag{You-get-The-key!!!}
+
+tips:
+vim 004.jpg -> :%!xxd

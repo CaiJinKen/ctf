@@ -1,0 +1,4 @@
+查看题目，格式符合SdyFlag{xxxxx},但是每个字节却对不上，估计是字符替换的一种移位加密ROT。找一个ROT加解密的工具，顺利找到key：SdyFlag{3d811d068e5bd27da4ab1b37723c7dd2}
+
+tips:
+http://ctf.ssleye.com/rot13.html

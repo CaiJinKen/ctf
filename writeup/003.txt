@@ -1,0 +1,15 @@
+看起来是一连串的16进制字符串，先转换成明文看看先，咱们使用golang写个转换程序：
+
+package main
+
+import (
+	"encoding/hex"
+	"fmt"
+)
+
+func main() {
+	bts,_:=hex.DecodeString("536479466c61677b6765745f796f755f7468655f666c61677d")
+	fmt.Printf("%s\n",bts)
+}
+
+得到flag：SdyFlag{get_you_the_flag}
