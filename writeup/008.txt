@@ -1,0 +1,8 @@
+这是个pacpng文件，为抓取流量包，那肯定得分析流量咯
+用Wireshark打开，发现基本都是些tcp的流量，仔细分析，上层协议其实是http，直接使用http进行过滤
+发现请求的path都是/test额，里面并没有任何有用信息。
+方法1：一个个观察排除
+方法2：发现/test请求和相应长度分别为155和180，过滤掉这种/test的 即：http && http.request.uri != "/test"
+发现有两条，/tset 和/proxy.pac，重置条件，搜索/tset，找到response，发现flag
+
+方法3：选中一条http请求，选择follow http stream，快速查看一下，发现有一条记录比较长，里面就有flag了
